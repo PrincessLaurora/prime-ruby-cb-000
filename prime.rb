@@ -1,4 +1,4 @@
-def prime?(134567)
-  integer = (134567).to_a
-  integer.collect {|n| integer.include?((integer % n) == 0)}
+def prime?(integer)
+  new_integer = integer.to_a
+  new_integer.collect {|n| new_integer.include?((new_integer % n) == 0)}
 end
