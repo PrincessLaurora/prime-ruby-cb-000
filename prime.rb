@@ -1,3 +1,9 @@
 def prime?(integer)
-  (1..integer).to_a.any? {|n| integer % n = 0}
+    if integer < 0 || integer == 1 || integer == 0
+      return false
+    else
+    (2..integer-1).to_a.all? do |n|
+      integer % n != 0
+    end
+  end
 end
