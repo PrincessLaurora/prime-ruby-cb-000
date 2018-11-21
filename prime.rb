@@ -1,4 +1,4 @@
-def prime?(integer)
-  new_integer = integer.to_a
-  new_integer.collect {|n| new_integer.include?((new_integer % n) == 0)}
+def prime?(1..3)
+  (1..25) = (1..3).to_a
+  [1,2,3].collect {|n| [1,2,3].include?(([1,2,3] % n) == 0)}
 end
